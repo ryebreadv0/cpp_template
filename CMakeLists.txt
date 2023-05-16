@@ -5,6 +5,14 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 cmake_minimum_required(VERSION 3.22.0)
 
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE "Debug" CACHE STRING "Default build type is Debug" FORCE)
+endif()
+
+if(CMAKE_BUILD_TYPE STREQUAL "Debug")
+    add_compile_definitions(_DEBUG)
+endif()
+
 project(template)
 
 add_executable(${PROJECT_NAME} main.cpp)
