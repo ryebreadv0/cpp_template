@@ -14,12 +14,17 @@ if(CMAKE_BUILD_TYPE STREQUAL "Debug")
 endif()
 
 project(template)
-
 add_executable(${PROJECT_NAME} main.cpp)
 
 include(cmake/CPM.cmake)
 
 CPMAddPackage("gh:fmtlib/fmt#10.0.0")
 
-target_link_libraries(${PROJECT_NAME} fmt)
+find_package(fmt CONFIG REQUIRED)
+target_link_libraries(${PROJECT_NAME} 
+    fmt::fmt
+)
+target_include_directories(${PROJECT_NAME} 
+    PRIVATE ${fmt_SOURCE_DIRS}/include
+)
 
