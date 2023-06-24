@@ -24,6 +24,7 @@ CheckOptions:
   - key: readability-identifier-length.IgnoredParameterNames
     value: 'x|y|z'
 
-
+IgnoredWarnings:
+    - 'clang-tidycppcoreguidelines-owning-memory'
 
 
