@@ -45,7 +45,7 @@
             "inherits": "Debug",
             "cacheVariables": {
                 "CMAKE_C_COMPILER": "clang",
-                "CMAKE_CXX_COMPILER": "clang++",
+                "CMAKE_CXX_COMPILER": "clang++"
             }
         },
         {
@@ -54,7 +54,7 @@
             "inherits": "Release",
             "cacheVariables": {
                 "CMAKE_C_COMPILER": "clang",
-                "CMAKE_CXX_COMPILER": "clang++",
+                "CMAKE_CXX_COMPILER": "clang++"
             }
         },
         {
