@@ -8,8 +8,7 @@ project(template)
 add_executable(${PROJECT_NAME} src/main.cpp)
 
 include(cmake/CPM.cmake)
-
-CPMAddPackage("gh:fmtlib/fmt#10.0.0")
+# CPMAddPackage("gh:fmtlib/fmt#10.0.0")
 
 find_package(fmt REQUIRED)
 target_link_libraries(${PROJECT_NAME} 
