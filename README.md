@@ -9,11 +9,12 @@ cmake --preset=linux-clang-debug &&
 ninja -C build/debug
 
 # package manager
-using cpm as a package manager
+using cpm and vcpkg as package managers
+
+vcpkg requires that it's root directory is on your path
 
 # clang format/tidy
-copied the clang format and tidy files from lefticus's cmake preset github page, made some slight modifications like tab sizes
-usage:
+copied the clang-tidy file from lefticus's cmake preset github page
 
-clang-tidy -p build/debug main.cpp
-clang-format main.cpp
+clang format is based off of webkit, with a few personal preference modifications
+
