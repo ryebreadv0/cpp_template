@@ -36,7 +36,7 @@
             "inherits": "Defaults",
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Release",
-				"CMAKE_INTERPROCEDURAL_OPTIMIZATION": "ON"
+		"CMAKE_INTERPROCEDURAL_OPTIMIZATION": "ON"
             }
         },
         {
